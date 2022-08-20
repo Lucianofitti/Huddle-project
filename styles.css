@@ -1,0 +1,138 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+--SoftMagenta: hsl(300, 69%, 71%);
+}
+*, ::after, ::before{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', 'Open Sans';
+} 
+main{
+    background-color: var(--Violet);
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom: 2.5rem;
+    overflow: hidden;
+}
+.header-container{
+    background-image: url(bg-mobile.svg);
+    background-position: center;
+    overflow: hidden;
+}
+header{
+    padding: 1.2em;
+}
+.logo{
+    display: block;
+    width: 40%;
+    position: relative;
+    left: 5%;
+    top: 12px;
+    max-width: 10.5rem;
+}
+header figure{
+
+    margin-top: 4em;
+    margin-inline: auto;
+    width: 90%;
+    max-width: 45rem;
+}
+header figure img{
+    width: 100%;
+    display: block;
+}
+section{
+    margin-inline: auto;
+    width: 90%;
+    text-align: center;
+}
+section h1{
+    color: white;
+    width: 80%;
+    margin-inline: auto;
+
+}
+section p{
+    width: 100%;
+    color: white;
+    font-family: 'open sans';
+    margin-bottom: 1.7rem;
+}
+section a{
+    box-shadow: 0 1px 7px hsl(270, 7%, 5%);
+    font-family: 'poppins';
+    font-size: .9rem;
+    text-decoration: none;
+    padding: .6rem 1.2rem;
+    display: block;
+    margin-inline: auto;
+    border-radius: 20px;
+    width: 60%;
+    max-width: 16rem;
+    background-color: white;
+}
+footer{
+    margin-top: 3rem;
+    width: 50%;
+    text-align: center;
+    margin-inline: auto;
+}
+footer img{
+    width: 15%;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: .3em;
+    margin-right: .4em;
+    max-width: 2.5rem;
+}
+@media (min-width:1000px){
+    main{
+        background-image: url(bg-desktop.svg);
+        background-position: center;
+        padding-bottom: 8rem;
+        
+    }
+    .header-container{
+        background-image: none;
+    }
+    .row{
+        display: flex;
+        align-items: center;
+    }
+    header{
+        
+    }
+    section{
+        text-align: left;
+        max-width: 35rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    section a{
+        max-width: 10rem;
+        padding: .7em;
+        margin-left: 0;
+        text-align: center;
+    }
+    section h1{
+        font-size: 2rem;
+        margin-left: 0;
+        margin-bottom: 1rem;
+        margin-right: 0;
+        width: 70%;
+    }
+    section p{
+        margin-top: 0;
+        margin-inline: 0;
+        width: 90%;
+    }
+    footer{
+        margin: 0;
+        margin-left: auto;
+        margin-right: 2rem;
+        position: relative;
+        top: 6.85rem;
+        text-align: right;
+    }
+}
